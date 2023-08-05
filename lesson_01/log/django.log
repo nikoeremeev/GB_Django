@@ -1,0 +1,23 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /about/ HTTP/1.1" 200 8
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 13
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp\views.py", line 17, in about
+    result = 1 / 0
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 27
+INFO 2023-08-05 12:23:20,926 autoreload 8120 11452 Watching for file changes with StatReloader
+INFO 2023-08-05 12:23:22,801 views 8120 12488 Index page accessed
+INFO 2023-08-05 12:23:22,802 basehttp 8120 12488 "GET / HTTP/1.1" 200 13
+ERROR 2023-08-05 12:23:26,359 views 8120 12488 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp\views.py", line 17, in about
+    result = 1 / 0
+ZeroDivisionError: division by zero
+INFO 2023-08-05 12:23:26,360 basehttp 8120 12488 "GET /about/ HTTP/1.1" 200 27
+INFO 2023-08-05 12:23:30,856 views 8120 12488 Index page accessed
+INFO 2023-08-05 12:23:30,856 basehttp 8120 12488 "GET / HTTP/1.1" 200 13
