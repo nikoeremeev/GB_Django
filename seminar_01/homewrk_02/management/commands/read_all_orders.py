@@ -1,6 +1,4 @@
 from django.core.management.base import BaseCommand
-from random import sample, randint as rin, choice
-
 from homewrk_02.models import Order, Customer, Product
 
 

@@ -1,0 +1,32 @@
+{% extends 'homewrk_02/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div>
+    <h3>{{ customer.name }}'s (id: {{ customer.pk }}) orders:</h3>
+    {% if not products %}
+    <p>Nothing ordered yet</p>
+    {% endif %}
+
+    <table class="wide">
+        <tr>
+            <th>Product name</th>
+            <th class="number">Product id</th>
+            <th class="price">Product price</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td class="number r_align">{{ product.pk }}</td>
+            <td class="price r_align">{{ product.price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+<footer>
+    <a href="{% url 'index' %}">Main</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'about' %}">About</a>
+</footer>
+{% endblock %}

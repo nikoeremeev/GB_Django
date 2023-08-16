@@ -3,10 +3,14 @@ from homewrk_02.models import Product
 
 
 class Command(BaseCommand):
-    help = "Get all products."
+    help = "Get product(s) by name."
+
+    def add_arguments(self, parser):
+        parser.add_argument('name', type=str, help='Searched product name')
 
     def handle(self, *args, **options):
-        for prod in Product.objects.all():
+        name = options.get('name')
+        for prod in Product.objects.filter(name__contains=name).all():
             out_string = ('=' * 80 +
                           f'\n{"Product id:":.<20}{prod.pk}\n'
                           f'{"Name":.<20}{prod.name}\n'

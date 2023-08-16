@@ -1,0 +1,15 @@
+{% extends 'homewrk_02/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="save">
+</form>
+<footer>
+    <a href="{% url 'index' %}">Main</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'about' %}">About</a>
+</footer>
+{% endblock %}

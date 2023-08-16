@@ -1,21 +1,26 @@
 from django.core.management.base import BaseCommand
-from hw_app.models import Product
-import random
+from homewrk_02.models import Product
+
+from faker import Faker
+from random import sample, randint as rin, uniform
+from string import ascii_uppercase as letters
+
+fake = Faker()
 
 
 class Command(BaseCommand):
-    help = "Generate fake products."
+    help = "Generate some fake products."
 
     def add_arguments(self, parser):
-        parser.add_argument('amount', type=int, help='Amount of fake users to generate.')
+        parser.add_argument('amt', type=int, help='Amount of fake users to generate.')
 
-    def handle(self, *args, **kwargs):
-        amount = kwargs.get('amount')
-        for _ in range(amount):
+    def handle(self, *args, **options):
+        amt = options.get('amt')
+        for _ in range(amt):
             Product(
-                name=f'product{random.randint(1, 10000)}',
-                description=f'any description{random.randint(1, 10000)}',
-                price=random.uniform(99, 99999),
-                amount=random.randint(0, 50),
+                name=f'article {"".join(sample(letters, 3))}.{rin(1, 99):0>3}-{rin(11, 999):0>3}',
+                description=fake.text(300),
+                price=uniform(99, 99999),
+                amount=rin(10, 300),
             ).save()
-        self.stdout.write(f"Added {amount} products.")
+        self.stdout.write(f"Added {amt} products.")
