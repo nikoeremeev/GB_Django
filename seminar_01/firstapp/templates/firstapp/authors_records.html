@@ -1,0 +1,23 @@
+{% extends 'app001/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div>
+    <h3>{{ author }}</h3>
+    <ol>
+        {% for article in articles %}
+        {% if article.published %}
+        <li><a href="#">{{ article.title }}</a></li>
+        {% else %}
+        <li>{{ article.title }}</li>
+        {% endif %}
+    {% endfor %}
+    </ol>
+</div>
+<footer>
+    <a href="">Main</a>&nbsp;&nbsp;&nbsp;
+    <a href="about/">About</a>
+    {{ tst }}
+</footer>
+{% endblock %}
