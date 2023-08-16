@@ -112,3 +112,379 @@ INFO 2023-08-15 21:44:08,182 basehttp 13792 11992 "GET /les3/index HTTP/1.1" 301
 INFO 2023-08-15 21:44:08,192 basehttp 13792 1888 "GET /les3/index/ HTTP/1.1" 200 214
 INFO 2023-08-15 21:44:13,521 basehttp 13792 1888 "GET /les3/about HTTP/1.1" 301 0
 INFO 2023-08-15 21:44:13,527 basehttp 13792 14932 "GET /les3/about/ HTTP/1.1" 200 220
+INFO 2023-08-16 19:01:37,083 autoreload 3516 8324 Watching for file changes with StatReloader
+INFO 2023-08-16 19:01:38,648 views 3516 15316 Index page accessed
+INFO 2023-08-16 19:01:38,651 basehttp 3516 15316 "GET / HTTP/1.1" 200 13
+INFO 2023-08-16 19:01:45,133 basehttp 3516 15316 "GET /les3/ HTTP/1.1" 200 176
+INFO 2023-08-16 19:01:49,320 basehttp 3516 15316 "GET /les3/index HTTP/1.1" 301 0
+ERROR 2023-08-16 19:01:49,436 log 3516 16056 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:01:49,441 basehttp 3516 16056 "GET /les3/index/ HTTP/1.1" 500 130393
+INFO 2023-08-16 19:03:33,537 views 3516 16056 Index page accessed
+INFO 2023-08-16 19:03:33,539 basehttp 3516 16056 "GET / HTTP/1.1" 200 13
+WARNING 2023-08-16 19:03:37,004 log 3516 16056 Not Found: /index
+WARNING 2023-08-16 19:03:37,005 basehttp 3516 16056 "GET /index HTTP/1.1" 404 2528
+ERROR 2023-08-16 19:03:44,545 log 3516 16056 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:03:44,548 basehttp 3516 16056 "GET /les3/index/ HTTP/1.1" 500 130393
+INFO 2023-08-16 19:05:08,953 autoreload 3516 8324 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py changed, reloading.
+INFO 2023-08-16 19:05:09,464 autoreload 16140 16012 Watching for file changes with StatReloader
+INFO 2023-08-16 19:05:10,565 views 16140 10052 Index page accessed
+INFO 2023-08-16 19:05:10,568 basehttp 16140 10052 "GET / HTTP/1.1" 200 13
+ERROR 2023-08-16 19:05:14,952 log 16140 10052 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2023-08-16 19:05:14,954 basehttp 16140 10052 "GET /les3/index/ HTTP/1.1" 500 81965
+INFO 2023-08-16 19:05:36,189 autoreload 16140 16012 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py changed, reloading.
+INFO 2023-08-16 19:05:36,917 autoreload 980 13192 Watching for file changes with StatReloader
+INFO 2023-08-16 19:05:38,711 views 980 8076 Index page accessed
+INFO 2023-08-16 19:05:38,713 basehttp 980 8076 "GET / HTTP/1.1" 200 13
+ERROR 2023-08-16 19:05:44,827 log 980 8076 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:05:44,830 basehttp 980 8076 "GET /les3/index/ HTTP/1.1" 500 130393
+INFO 2023-08-16 19:06:14,008 basehttp 980 8076 "GET /les3/about HTTP/1.1" 301 0
+INFO 2023-08-16 19:06:14,027 basehttp 980 4012 "GET /les3/about/ HTTP/1.1" 200 220
+INFO 2023-08-16 19:07:10,386 autoreload 9616 3860 Watching for file changes with StatReloader
+INFO 2023-08-16 19:07:12,096 views 9616 15952 Index page accessed
+INFO 2023-08-16 19:07:12,098 basehttp 9616 15952 "GET / HTTP/1.1" 200 13
+ERROR 2023-08-16 19:07:17,289 log 9616 15952 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:07:17,295 basehttp 9616 15952 "GET /les3/index/ HTTP/1.1" 500 130393
+INFO 2023-08-16 19:12:06,370 autoreload 13640 14236 Watching for file changes with StatReloader
+ERROR 2023-08-16 19:12:08,086 log 13640 2704 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:12:08,099 basehttp 13640 2704 "GET / HTTP/1.1" 500 130239
+INFO 2023-08-16 19:14:37,307 autoreload 4368 2732 Watching for file changes with StatReloader
+ERROR 2023-08-16 19:14:39,135 log 4368 9432 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 73, in index
+    return render(request, "myapp3/index.html")
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-08-16 19:14:39,138 basehttp 4368 9432 "GET / HTTP/1.1" 500 130239
+INFO 2023-08-16 19:15:49,073 autoreload 11900 14756 Watching for file changes with StatReloader
+INFO 2023-08-16 19:15:50,367 basehttp 11900 9204 "GET / HTTP/1.1" 200 302
+INFO 2023-08-16 19:18:22,069 autoreload 11900 14756 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\models.py changed, reloading.
+INFO 2023-08-16 19:18:22,759 autoreload 5316 12280 Watching for file changes with StatReloader
+INFO 2023-08-16 19:49:21,023 autoreload 15788 2848 Watching for file changes with StatReloader
+INFO 2023-08-16 19:49:23,694 basehttp 15788 6308 "GET / HTTP/1.1" 200 302
+INFO 2023-08-16 19:49:34,477 basehttp 15788 6308 "GET /les3/author/5 HTTP/1.1" 301 0
+INFO 2023-08-16 19:49:34,494 basehttp 15788 15912 "GET /les3/author/5/ HTTP/1.1" 200 1188
+ERROR 2023-08-16 19:49:37,708 log 15788 15912 Internal Server Error: /les3/post/35/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 90, in post_full
+    return render(request, 'myapp3/post_full.html', {'post': post})
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/post_full.html
+ERROR 2023-08-16 19:49:37,711 basehttp 15788 15912 "GET /les3/post/35/ HTTP/1.1" 500 82301
+INFO 2023-08-16 19:50:39,025 basehttp 15788 15912 "GET /les3/author/5/ HTTP/1.1" 200 1188
+ERROR 2023-08-16 19:50:41,203 log 15788 15912 Internal Server Error: /les3/post/31/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 90, in post_full
+    return render(request, 'myapp3/post_full.html', {'post': post})
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/post_full.html
+ERROR 2023-08-16 19:50:41,205 basehttp 15788 15912 "GET /les3/post/31/ HTTP/1.1" 500 82301
+ERROR 2023-08-16 19:52:39,915 log 15788 15912 Internal Server Error: /les3/post/34/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 90, in post_full
+    return render(request, 'myapp3/post_full.html', {'post': post})
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/post_full.html
+ERROR 2023-08-16 19:52:39,916 basehttp 15788 15912 "GET /les3/post/34/ HTTP/1.1" 500 82301
+INFO 2023-08-16 19:52:43,480 basehttp 15788 15912 "GET /les3/post/1 HTTP/1.1" 301 0
+ERROR 2023-08-16 19:52:43,516 log 15788 8588 Internal Server Error: /les3/post/1/
+Traceback (most recent call last):
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp3\views.py", line 90, in post_full
+    return render(request, 'myapp3/post_full.html', {'post': post})
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\MyProjectsPython\GB_Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/post_full.html
+ERROR 2023-08-16 19:52:43,518 basehttp 15788 8588 "GET /les3/post/1/ HTTP/1.1" 500 82122
+INFO 2023-08-16 19:53:56,579 autoreload 10840 15820 Watching for file changes with StatReloader
+INFO 2023-08-16 19:53:57,565 basehttp 10840 13032 "GET / HTTP/1.1" 200 302
+INFO 2023-08-16 19:54:01,413 basehttp 10840 13032 "GET /les3/author/5/ HTTP/1.1" 200 1188
+INFO 2023-08-16 19:54:03,458 basehttp 10840 13032 "GET /les3/post/35/ HTTP/1.1" 200 673
