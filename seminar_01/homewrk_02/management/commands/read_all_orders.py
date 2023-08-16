@@ -1,11 +1,13 @@
 from django.core.management.base import BaseCommand
-from hw_app.models import Client, Product, Order
+from random import sample, randint as rin, choice
+
+from homewrk_02.models import Order, Customer, Product
 
 
 class Command(BaseCommand):
-    help = "Get some fake orders."
+    help = "Generate some fake orders."
 
-    def handle(self, *args, **kwargs):
+    def handle(self, *args, **options):
         result_string = ''
         orders = Order.objects.all()
         if not orders:
