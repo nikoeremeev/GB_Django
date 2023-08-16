@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'firstapp',
     'gameapp',
-    'hw_app'
+    'homewrk_02',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,9 @@ ROOT_URLCONF = 'seminar_01.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -158,7 +160,7 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
-        'hw_app': {
+        'homewrk_02': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
