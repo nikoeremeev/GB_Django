@@ -23,4 +23,5 @@ urlpatterns = [
     # path('', include('myapp.urls')),
     path('les3/', include('myapp3.urls')),
     path('', index),
+    path('les4/', include('myapp4.urls')),
 ]

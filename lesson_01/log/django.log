@@ -490,3 +490,103 @@ INFO 2023-08-16 19:54:01,413 basehttp 10840 13032 "GET /les3/author/5/ HTTP/1.1"
 INFO 2023-08-16 19:54:03,458 basehttp 10840 13032 "GET /les3/post/35/ HTTP/1.1" 200 673
 WARNING 2023-08-16 19:57:23,209 log 10840 2660 Not Found: /favicon.ico
 WARNING 2023-08-16 19:57:23,210 basehttp 10840 2660 "GET /favicon.ico HTTP/1.1" 404 2318
+INFO 2023-08-19 11:56:52,804 autoreload 9744 3688 Watching for file changes with StatReloader
+INFO 2023-08-19 11:56:57,462 basehttp 9744 14492 "GET / HTTP/1.1" 200 302
+WARNING 2023-08-19 11:56:57,759 log 9744 14492 Not Found: /favicon.ico
+WARNING 2023-08-19 11:56:57,760 basehttp 9744 14492 "GET /favicon.ico HTTP/1.1" 404 2423
+WARNING 2023-08-19 11:57:02,804 log 9744 14716 Not Found: /les4
+WARNING 2023-08-19 11:57:02,805 basehttp 9744 14716 "GET /les4 HTTP/1.1" 404 2402
+INFO 2023-08-19 11:57:39,830 basehttp 9744 6920 "GET /les4/user/add HTTP/1.1" 301 0
+INFO 2023-08-19 11:57:39,898 basehttp 9744 7332 "GET /les4/user/add/ HTTP/1.1" 200 743
+INFO 2023-08-19 12:00:53,191 autoreload 14224 9752 Watching for file changes with StatReloader
+INFO 2023-08-19 12:00:55,379 basehttp 14224 13784 "GET / HTTP/1.1" 200 302
+INFO 2023-08-19 12:01:02,582 basehttp 14224 13784 "GET /les4/user/add/ HTTP/1.1" 200 981
+INFO 2023-08-19 12:01:12,217 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:01:26,698 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:01:27,815 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:27,936 basehttp 14224 13784 "GET / HTTP/1.1" 200 302
+INFO 2023-08-19 12:04:35,294 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:36,341 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:37,048 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:37,624 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:37,880 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:38,071 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:38,253 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:04:38,567 basehttp 14224 13784 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:05:09,312 autoreload 14224 9752 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\lesson_01\settings.py changed, reloading.
+INFO 2023-08-19 12:05:09,760 autoreload 14664 12684 Watching for file changes with StatReloader
+INFO 2023-08-19 12:05:11,190 basehttp 14664 3268 "GET / HTTP/1.1" 200 302
+INFO 2023-08-19 12:05:15,748 views 14664 3268 Получили name='wqd', email='nikoeremeev@mail.ru', age=30.
+INFO 2023-08-19 12:05:15,763 basehttp 14664 3268 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:05:16,779 views 14664 3268 Получили name='wqd', email='nikoeremeev@mail.ru', age=30.
+INFO 2023-08-19 12:05:16,781 basehttp 14664 3268 "POST /les4/user/add/ HTTP/1.1" 200 1033
+INFO 2023-08-19 12:06:54,996 autoreload 14664 12684 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\forms.py changed, reloading.
+INFO 2023-08-19 12:06:55,544 autoreload 3044 10524 Watching for file changes with StatReloader
+INFO 2023-08-19 12:11:06,255 autoreload 3044 10524 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:11:06,756 autoreload 14340 4956 Watching for file changes with StatReloader
+INFO 2023-08-19 12:11:44,417 autoreload 14340 4956 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:11:44,978 autoreload 3356 11808 Watching for file changes with StatReloader
+INFO 2023-08-19 12:11:51,546 autoreload 3356 11808 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:11:51,994 autoreload 1756 14996 Watching for file changes with StatReloader
+INFO 2023-08-19 12:12:01,648 autoreload 1756 14996 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:12:02,110 autoreload 5892 3688 Watching for file changes with StatReloader
+INFO 2023-08-19 12:12:09,698 autoreload 5892 3688 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:12:10,149 autoreload 14584 7600 Watching for file changes with StatReloader
+INFO 2023-08-19 12:12:15,661 autoreload 14584 7600 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:12:16,112 autoreload 2800 5924 Watching for file changes with StatReloader
+INFO 2023-08-19 12:14:04,096 autoreload 2800 5924 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\urls.py changed, reloading.
+INFO 2023-08-19 12:14:04,612 autoreload 4064 9832 Watching for file changes with StatReloader
+INFO 2023-08-19 12:15:52,003 basehttp 4064 4656 "GET / HTTP/1.1" 200 302
+WARNING 2023-08-19 12:15:59,565 log 4064 4656 Not Found: /les4/form
+WARNING 2023-08-19 12:15:59,565 basehttp 4064 4656 "GET /les4/form HTTP/1.1" 404 2674
+INFO 2023-08-19 12:16:04,025 basehttp 4064 4656 "GET /les4/forms HTTP/1.1" 301 0
+INFO 2023-08-19 12:16:04,073 basehttp 4064 5360 "GET /les4/forms/ HTTP/1.1" 200 1508
+INFO 2023-08-19 12:16:27,571 views 4064 5360 Получили form.cleaned_data={'name': 'qwd', 'email': 'mail@mail.ru', 'age': 30, 'height': 180.0, 'is_active': True, 'birthdate': datetime.date(2023, 8, 19), 'gender': 'M'}.
+INFO 2023-08-19 12:16:27,576 basehttp 4064 5360 "POST /les4/forms/ HTTP/1.1" 200 1581
+INFO 2023-08-19 12:22:23,205 autoreload 4064 9832 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:22:23,742 autoreload 9312 14788 Watching for file changes with StatReloader
+INFO 2023-08-19 12:22:47,835 autoreload 9312 14788 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:22:48,326 autoreload 4648 14472 Watching for file changes with StatReloader
+INFO 2023-08-19 12:30:04,643 autoreload 4648 14472 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:30:05,197 autoreload 14620 14024 Watching for file changes with StatReloader
+INFO 2023-08-19 12:30:30,516 autoreload 14620 14024 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:30:30,985 autoreload 1320 8880 Watching for file changes with StatReloader
+INFO 2023-08-19 12:30:33,502 autoreload 1320 8880 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:30:34,036 autoreload 4972 14064 Watching for file changes with StatReloader
+INFO 2023-08-19 12:30:56,515 basehttp 4972 14260 "POST /les4/forms/ HTTP/1.1" 200 2260
+INFO 2023-08-19 12:32:40,903 autoreload 4972 14064 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\forms.py changed, reloading.
+INFO 2023-08-19 12:32:41,407 autoreload 14452 6112 Watching for file changes with StatReloader
+INFO 2023-08-19 12:32:52,109 autoreload 14452 6112 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\forms.py changed, reloading.
+INFO 2023-08-19 12:32:52,557 autoreload 14200 3184 Watching for file changes with StatReloader
+INFO 2023-08-19 12:32:58,711 basehttp 14200 2064 "POST /les4/forms/ HTTP/1.1" 200 2260
+INFO 2023-08-19 12:37:14,852 autoreload 14200 3184 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\forms.py changed, reloading.
+INFO 2023-08-19 12:37:15,347 autoreload 7136 15016 Watching for file changes with StatReloader
+INFO 2023-08-19 12:40:02,282 autoreload 7136 15016 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\models.py changed, reloading.
+INFO 2023-08-19 12:40:02,809 autoreload 1740 14112 Watching for file changes with StatReloader
+INFO 2023-08-19 12:40:22,902 autoreload 1740 14112 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\models.py changed, reloading.
+INFO 2023-08-19 12:40:23,384 autoreload 2060 2204 Watching for file changes with StatReloader
+INFO 2023-08-19 12:46:58,517 autoreload 12044 9132 Watching for file changes with StatReloader
+INFO 2023-08-19 12:47:03,336 basehttp 12044 4864 "GET / HTTP/1.1" 200 302
+INFO 2023-08-19 12:47:09,645 basehttp 12044 4864 "GET /les4/user HTTP/1.1" 301 0
+INFO 2023-08-19 12:47:09,664 basehttp 12044 14676 "GET /les4/user/ HTTP/1.1" 200 1024
+INFO 2023-08-19 12:47:20,692 basehttp 12044 14676 "POST /les4/user/ HTTP/1.1" 200 1166
+INFO 2023-08-19 12:47:32,274 views 12044 14676 Получили name='sdasda', email='mail@corp.mail.ru', age=30.
+INFO 2023-08-19 12:47:32,299 basehttp 12044 14676 "POST /les4/user/ HTTP/1.1" 200 1088
+INFO 2023-08-19 12:48:30,486 autoreload 9828 14480 Watching for file changes with StatReloader
+INFO 2023-08-19 12:48:35,763 views 9828 14692 Получили name='sdasda', email='mail@corp.mail.ru', age=30.
+INFO 2023-08-19 12:48:35,799 basehttp 9828 14692 "POST /les4/user/ HTTP/1.1" 200 1027
+INFO 2023-08-19 12:48:39,082 views 9828 14692 Получили name='sdasda', email='mail@corp.mail.ru', age=30.
+INFO 2023-08-19 12:48:39,101 basehttp 9828 14692 "POST /les4/user/ HTTP/1.1" 200 1027
+INFO 2023-08-19 12:51:33,099 autoreload 9828 14480 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\forms.py changed, reloading.
+INFO 2023-08-19 12:51:33,635 autoreload 11808 13380 Watching for file changes with StatReloader
+INFO 2023-08-19 12:53:24,775 autoreload 11808 13380 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\lesson_01\settings.py changed, reloading.
+INFO 2023-08-19 12:53:25,267 autoreload 9796 14804 Watching for file changes with StatReloader
+INFO 2023-08-19 12:53:56,804 autoreload 9796 14804 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:53:57,309 autoreload 11320 14632 Watching for file changes with StatReloader
+INFO 2023-08-19 12:54:22,624 autoreload 11320 14632 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\views.py changed, reloading.
+INFO 2023-08-19 12:54:23,161 autoreload 7960 14988 Watching for file changes with StatReloader
+INFO 2023-08-19 12:56:28,649 autoreload 7960 14988 C:\Users\Admin\MyProjectsPython\GB_Django\lesson_01\myapp4\urls.py changed, reloading.
+INFO 2023-08-19 12:56:29,159 autoreload 8856 2528 Watching for file changes with StatReloader
+INFO 2023-08-19 13:00:46,638 basehttp 8856 7224 "GET /les4/upload HTTP/1.1" 301 0
+INFO 2023-08-19 13:00:46,659 basehttp 8856 408 "GET /les4/upload/ HTTP/1.1" 200 633
+INFO 2023-08-19 13:00:54,082 basehttp 8856 408 "POST /les4/upload/ HTTP/1.1" 200 633
