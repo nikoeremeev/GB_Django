@@ -1,0 +1,22 @@
+{% extends 'app001/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div>
+    <h3>{{ author }}</h3>
+    <ol>
+        {% for art in articles %}
+        {% if art.published %}
+        <li><a href="{% url 'get_article' art.id %}">{{ art.title }}</a></li>
+        {% else %}
+        <li>{{ art.title }}</li>
+        {% endif %}
+    {% endfor %}
+    </ol>
+</div>
+<footer>
+    <a href="{% url 'index' %}">Main</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'about' %}">About</a>
+</footer>
+{% endblock %}

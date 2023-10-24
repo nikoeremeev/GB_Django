@@ -8,6 +8,7 @@ from .models import Customer, Product, Order
 
 def products_list(request):
     products = [*enumerate(Product.objects.all().order_by('pk'), start=1)]
+    # products = [f'{i:0>10}' for i in range(100)]
     return render(request,
                   'homewrk_02/hw02_products.html',
                   {'title': 'Product list', 'products': products}
